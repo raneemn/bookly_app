@@ -13,7 +13,7 @@ class CustomAppBar extends StatelessWidget {
         children: [
           Image.asset(
             AssetsData.logo,
-            height: 20,
+            height: 18,
           ),
           const Spacer(),
           IconButton(
