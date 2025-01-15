@@ -1,7 +1,5 @@
 import 'package:bookly_app/core/utils/styles.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-
 import '../../../../../core/utils/assets.dart';
 import 'book_rating.dart';
 
@@ -65,7 +63,7 @@ class BestSellerListViewItem extends StatelessWidget {
                         .copyWith(fontWeight: FontWeight.bold),
                   ),
                   const Spacer(),
-                  BookRating()
+                  const BookRating()
                 ],
               ),
             ],
