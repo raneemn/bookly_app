@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-abstract class Stryles {
+abstract class Styles {
   static const textStyle14 = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.normal,
@@ -14,6 +14,10 @@ abstract class Stryles {
   static const textStyle18 = TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.w600,
+  );
+  static const textStyle20Regular = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.normal,
   );
   static TextStyle textStyle20 =
       GoogleFonts.playfairDisplay(fontSize: 20, fontWeight: FontWeight.normal);

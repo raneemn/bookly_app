@@ -1,15 +1,17 @@
-import 'package:bookly_app/core/utils/stryles.dart';
+import 'package:bookly_app/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../../core/utils/assets.dart';
+import 'book_rating.dart';
 
 class BestSellerListViewItem extends StatelessWidget {
   const BestSellerListViewItem({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(
           height: 125,
@@ -29,9 +31,45 @@ class BestSellerListViewItem extends StatelessWidget {
             ),
           ),
         ),
-        Text(
-          'Raneem Nuseirat',
-          style: GoogleFonts.playfairDisplay(fontSize: 30),
+        const SizedBox(
+          width: 30,
+        ),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                width: MediaQuery.of(context).size.width * .5,
+                child: Text(
+                  'Raneem Nuseirat is the best developer',
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: Styles.textStyle20,
+                ),
+              ),
+              const SizedBox(
+                height: 3,
+              ),
+              const Text(
+                'Raneem Nuseirat',
+                style: Styles.textStyle14,
+              ),
+              const SizedBox(
+                height: 3,
+              ),
+              Row(
+                children: [
+                  Text(
+                    '19.9 E',
+                    style: Styles.textStyle20Regular
+                        .copyWith(fontWeight: FontWeight.bold),
+                  ),
+                  const Spacer(),
+                  BookRating()
+                ],
+              ),
+            ],
+          ),
         )
       ],
     );
