@@ -7,7 +7,25 @@ class BookDetailsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
+      appBar: AppBar(
+        leading: Padding(
+          padding: const EdgeInsets.only(left: 15),
+          child: IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.close),
+          ),
+        ),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 15),
+            child: IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.shopping_cart_checkout_outlined),
+            ),
+          )
+        ],
+      ),
       body: BookDetailsViewBody(),
     );
   }
