@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'custom_book_image.dart';
 
 class SimilarBooksListView extends StatelessWidget {

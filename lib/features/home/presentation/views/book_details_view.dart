@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:go_router/go_router.dart';
 import 'widgets/book_details_view_body.dart';
 
 class BookDetailsView extends StatelessWidget {
@@ -12,7 +12,9 @@ class BookDetailsView extends StatelessWidget {
         leading: Padding(
           padding: const EdgeInsets.only(left: 15),
           child: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              GoRouter.of(context).pop();              
+            },
             icon: const Icon(Icons.close),
           ),
         ),
@@ -26,7 +28,7 @@ class BookDetailsView extends StatelessWidget {
           )
         ],
       ),
-      body: BookDetailsViewBody(),
+      body: const BookDetailsViewBody(),
     );
   }
 }
