@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class SlidingUpText extends StatelessWidget {
@@ -13,7 +12,7 @@ class SlidingUpText extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedBuilder(
       animation: slidingUpAnimation,
-      builder: (context,_) {
+      builder: (context, _) {
         return SlideTransition(
           position: slidingUpAnimation,
           child: const Text(
@@ -21,7 +20,7 @@ class SlidingUpText extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
         );
-      }, 
+      },
     );
   }
 }

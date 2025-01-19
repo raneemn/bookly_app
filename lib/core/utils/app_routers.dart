@@ -8,13 +8,12 @@ abstract class AppRouters {
   static const kHomeView = '/homeView';
   static const kSearchView = '/searchView';
   static const kBookDetailsView = '/bookDetailsView';
-  static final router = GoRouter(
-    routes: [
+  static final router = GoRouter(routes: [
     GoRoute(
       path: '/',
       builder: (context, state) => const SplashView(),
     ),
-     GoRoute(
+    GoRoute(
       path: kSearchView,
       builder: (context, state) => const SearchView(),
     ),

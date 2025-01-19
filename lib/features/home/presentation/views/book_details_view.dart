@@ -13,7 +13,7 @@ class BookDetailsView extends StatelessWidget {
           padding: const EdgeInsets.only(left: 15),
           child: IconButton(
             onPressed: () {
-              GoRouter.of(context).pop();              
+              GoRouter.of(context).pop();
             },
             icon: const Icon(Icons.close),
           ),
